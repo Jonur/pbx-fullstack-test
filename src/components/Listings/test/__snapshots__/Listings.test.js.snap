@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listings Component should render the component 1`] = `
+<section
+  className="pb-section"
+>
+  <h1
+    className="section-title"
+  >
+    Listings
+  </h1>
+  <div
+    data-test="product-listing"
+    key="0"
+  >
+    Product
+  </div>
+  <div
+    data-test="product-listing"
+    key="1"
+  >
+    Product
+  </div>
+</section>
+`;

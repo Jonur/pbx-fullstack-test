@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Listings from '../Listings';
 import { getProducts } from '../../utils/api';
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
     const { listings } = this.state;
 
     return (
-      (listings.length && <main data-test="product-listings">Listing page {listings.length}</main>)
+      (listings.length && <Listings data-test="product-listings" listings={listings} />)
       || <div data-test="app-loader">Loading...</div>
     );
   }
