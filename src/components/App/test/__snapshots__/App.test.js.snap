@@ -2,7 +2,9 @@
 
 exports[`App Component should render the App component 1`] = `
 <App>
-  <div>
+  <div
+    data-test="app-loader"
+  >
     Loading...
   </div>
 </App>

@@ -28,6 +28,10 @@ describe('App Component', () => {
     expect(getProducts).toHaveBeenCalledTimes(1);
   });
 
+  it('should show the application loader for a default empty listings state', () => {
+    expect(wrapper.find('[data-test="app-loader"]')).toHaveLength(1);
+  });
+
   it('should render the product listings component', async () => {
     await Promise.resolve(getProducts).then(() => {
       wrapper.update();

@@ -17,7 +17,10 @@ class App extends Component {
   render() {
     const { listings } = this.state;
 
-    return ((listings.length && <main data-test="product-listings">Listing page {listings.length}</main>) || <div>Loading...</div>);
+    return (
+      (listings.length && <main data-test="product-listings">Listing page {listings.length}</main>)
+      || <div data-test="app-loader">Loading...</div>
+    );
   }
 }
 
