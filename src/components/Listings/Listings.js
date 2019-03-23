@@ -19,7 +19,12 @@ const Listings = ({ listings }) => (
         ctaLink,
         cta,
       }, index) => {
-        const formattedPrice = `${currency}${price}`;
+        const formatPrice = (currency, price, decimal) => {
+          const formattedPrice = `${currency}${price}`;
+          const partInt = formattedPrice.substring(0, formattedPrice.length - 2);
+          const partFraction = formattedPrice.substring(formattedPrice.length - 2);
+          return `${partInt}${decimal}${partFraction}`;
+        };
 
         return (
           <div data-test="product-listing" key={index}>
@@ -29,7 +34,7 @@ const Listings = ({ listings }) => (
             <p>{description}</p>
             <div className="price">
               <span>{priceLabel}</span>
-              <span>{formattedPrice}</span>
+              <span>{formatPrice(currency, price, '.')}</span>
             </div>
             <a href={ctaLink} className="product-cta">{cta}</a>
           </div>
