@@ -38,7 +38,8 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.11.2"
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -47,6 +48,9 @@
       "!src/**/*.stories.{js,jsx}",
       "!src/serviceWorker.js",
       "!src/**/index.{js,jsx}"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   }
 }
