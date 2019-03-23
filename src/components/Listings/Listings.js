@@ -5,11 +5,36 @@ const Listings = ({ listings }) => (
   <section className="pb-section">
     <h1 className="section-title">Listings</h1>
     {
-      listings.map((product, index) => (
-        <div data-test="product-listing" key={index}>
-          Product
-        </div>
-      ))
+      listings.map(({
+        image: {
+          path,
+          alt,
+        },
+        productLabel,
+        title,
+        description,
+        priceLabel,
+        currency,
+        price,
+        ctaLink,
+        cta,
+      }, index) => {
+        const formattedPrice = `${currency}${price}`;
+
+        return (
+          <div data-test="product-listing" key={index}>
+            <img className="product-cover" src={path} alt={alt} />
+            {productLabel && <span className="product-label">{productLabel}</span>}
+            <h2 className="product-title">{title}</h2>
+            <p>{description}</p>
+            <div className="price">
+              <span>{priceLabel}</span>
+              <span>{formattedPrice}</span>
+            </div>
+            <a href={ctaLink} className="product-cta">{cta}</a>
+          </div>
+        );
+      })
     }
   </section>
 );

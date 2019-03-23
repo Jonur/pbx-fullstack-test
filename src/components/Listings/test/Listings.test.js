@@ -44,8 +44,4 @@ describe('Listings Component', () => {
   it('should contain 2 product listing cards', () => {
     expect(wrapper.find('[data-test="product-listing"]')).toHaveLength(2);
   });
-
-  // it('should render a product listing card with the right data', () => {
-
-  // });
 });

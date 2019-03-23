@@ -13,13 +13,74 @@ exports[`Listings Component should render the component 1`] = `
     data-test="product-listing"
     key="0"
   >
-    Product
+    <img
+      alt="Simple Canvas"
+      className="product-cover"
+      src="/images/product.jpg"
+    />
+    <span
+      className="product-label"
+    >
+      bestseller
+    </span>
+    <h2
+      className="product-title"
+    >
+      Simple Canvas
+    </h2>
+    <p>
+      Lets your pictures speak for themselves.
+    </p>
+    <div
+      className="price"
+    >
+      <span>
+        From
+      </span>
+      <span>
+        £1500
+      </span>
+    </div>
+    <a
+      className="product-cta"
+      href="/random/link/to/no/where"
+    >
+      Shop Now
+    </a>
   </div>
   <div
     data-test="product-listing"
     key="1"
   >
-    Product
+    <img
+      alt="Collage Canvas"
+      className="product-cover"
+      src="/images/product.jpg"
+    />
+    <h2
+      className="product-title"
+    >
+      Collage Canvas
+    </h2>
+    <p>
+      Can't choose just one pic? Put your favourite photos on one canvas - a collage.
+    </p>
+    <div
+      className="price"
+    >
+      <span>
+        From
+      </span>
+      <span>
+        £2500
+      </span>
+    </div>
+    <a
+      className="product-cta"
+      href="/random/link/to/no/where"
+    >
+      Shop Now
+    </a>
   </div>
 </section>
 `;
