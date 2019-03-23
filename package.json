@@ -47,7 +47,8 @@
       "!<rootDir>/node_modules/",
       "!src/**/*.stories.{js,jsx}",
       "!src/serviceWorker.js",
-      "!src/**/index.{js,jsx}"
+      "!src/**/index.{js,jsx}",
+      "!src/utils/api.js"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
