@@ -1,10 +1,15 @@
-$font-size-base : 12;
-body {
-  font-family: Open Sans Regular, Helvetica, Arial, sans-serif; //$font-family-base;
+$font-size-base: 12;
+
+html, body {
+  font-family: 'Open Sans Regular', Helvetica, Arial, sans-serif;
   font-size: $font-size-base;
   -webkit-font-smoothing: antialiased;
   color: #3b4153;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;

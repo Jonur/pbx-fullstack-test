@@ -10,77 +10,85 @@ exports[`Listings Component should render the component 1`] = `
     Listings
   </h1>
   <div
-    data-test="product-listing"
-    key="0"
+    className="products"
   >
-    <img
-      alt="Simple Canvas"
-      className="product-cover"
-      src="/images/product.jpg"
-    />
-    <span
-      className="product-label"
-    >
-      bestseller
-    </span>
-    <h2
-      className="product-title"
-    >
-      Simple Canvas
-    </h2>
-    <p>
-      Lets your pictures speak for themselves.
-    </p>
     <div
-      className="price"
+      data-test="product-listing"
+      key="0"
     >
-      <span>
-        From
-      </span>
-      <span>
-        £15.00
-      </span>
+      <img
+        alt="Simple Canvas"
+        className="product-cover"
+        src="/images/product.jpg"
+      />
+      <div
+        className="product-labels"
+      >
+        <span
+          className="product-label"
+        >
+          bestseller
+        </span>
+      </div>
+      <h2
+        className="product-title"
+      >
+        Simple Canvas
+      </h2>
+      <p>
+        Lets your pictures speak for themselves.
+      </p>
+      <div
+        className="price"
+      >
+        <span>
+          From
+        </span>
+        <span>
+          £15.00
+        </span>
+      </div>
+      <a
+        className="product-cta"
+        href="/random/link/to/no/where"
+      >
+        Shop Now
+      </a>
     </div>
-    <a
-      className="product-cta"
-      href="/random/link/to/no/where"
-    >
-      Shop Now
-    </a>
-  </div>
-  <div
-    data-test="product-listing"
-    key="1"
-  >
-    <img
-      alt="Collage Canvas"
-      className="product-cover"
-      src="/images/product.jpg"
-    />
-    <h2
-      className="product-title"
-    >
-      Collage Canvas
-    </h2>
-    <p>
-      Can't choose just one pic? Put your favourite photos on one canvas - a collage.
-    </p>
     <div
-      className="price"
+      data-test="product-listing"
+      key="1"
     >
-      <span>
-        From
-      </span>
-      <span>
-        £25.00
-      </span>
+      <img
+        alt="Collage Canvas"
+        className="product-cover"
+        src="/images/product.jpg"
+      />
+      <h2
+        className="product-title"
+      >
+        Collage Canvas
+      </h2>
+      <p>
+        Can't choose just one pic? Put your favourite photos on one canvas - a collage.
+      </p>
+      <div
+        className="price"
+      >
+        <span>
+          From
+        </span>
+        <span>
+          £25.00
+        </span>
+      </div>
+      <a
+        className="product-cta"
+        href="/random/link/to/no/where"
+      >
+        Shop Now
+      </a>
     </div>
-    <a
-      className="product-cta"
-      href="/random/link/to/no/where"
-    >
-      Shop Now
-    </a>
   </div>
 </section>
 `;
