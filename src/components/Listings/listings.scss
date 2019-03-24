@@ -14,27 +14,51 @@ $desktop-width: 768px;
 }
 
 .pb-section {
-  width: 1024px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
   color: #3a4155;
 
+  @include tablet {
+    font-size: 1rem;
+  }
+
+
   .section-title {
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   .products {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    @include tablet {
+      align-content: center;
+    }
+
 
     > div {
-      flex: 1;
+      flex: 1 100%;
       text-align: center;
       border: 2px solid #dfe0ed;
-      padding: 2rem;
-      margin-bottom: 2rem;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      @include tablet {
+        flex: 1 1 30%;
+        max-width: 30%;
+      }
+
+
+      @include desktop {
+        flex: 1;
+        margin-right: 10px;
+        max-width: 28%;
+      }
+
 
       .product-cover {
         max-width: 100%;
@@ -42,8 +66,8 @@ $desktop-width: 768px;
 
       .product-labels {
         .product-label {
-          margin: 0 -2rem;
-          padding: .5rem 2rem;
+          margin: 0 -20px;
+          padding: 5px 20px;
           text-align: left;
           color: white;
           font-weight: bold;
@@ -56,30 +80,40 @@ $desktop-width: 768px;
       }
 
       p {
-        margin: 3rem 0;
+        margin: 30px 0;
       }
 
       .price {
         > span:first-of-type {
-          margin-right: 1rem;
-          font-size: .875rem;
+          margin-right: 10px;
+          font-size: 1rem;
+
+          @include tablet {
+            font-size: 2rem;
+          }
         }
 
         > span:last-of-type {
           font-weight: bold;
           font-size: 2rem;
+
+          @include tablet {
+            font-size: 3rem;
+          }
         }
       }
 
       .product-cta {
         display: block;
         border: 5px solid #00ff00;
-        margin: 2rem auto;
-        padding: 2rem;
-        font-size: 3rem;
+        margin: 20px auto;
+        padding: 20px;
+        font-size: 1.5rem;
         font-weight: bold;
-        height: 40px;
-        line-height: 40px;
+
+        @include tablet {
+          font-size: 2rem;
+        }
       }
 
       .product-cta, .product-cta:hover, .product-cta:visited {
