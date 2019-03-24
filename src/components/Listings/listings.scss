@@ -65,6 +65,9 @@ $desktop-width: 768px;
       }
 
       .product-labels {
+        height: 30px;
+        min-height: 30px;
+
         .product-label {
           margin: 0 -20px;
           padding: 5px 20px;

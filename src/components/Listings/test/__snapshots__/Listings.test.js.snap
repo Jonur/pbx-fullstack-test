@@ -64,6 +64,9 @@ exports[`Listings Component should render the component 1`] = `
         className="product-cover"
         src="/images/product.jpg"
       />
+      <div
+        className="product-labels"
+      />
       <h2
         className="product-title"
       >

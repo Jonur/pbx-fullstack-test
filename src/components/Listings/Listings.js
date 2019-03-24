@@ -31,7 +31,7 @@ const Listings = ({ listings }) => (
           return (
             <div data-test="product-listing" key={index}>
               <img className="product-cover" src={path} alt={alt} />
-              {productLabel && <div className="product-labels"><span className="product-label">{productLabel}</span></div>}
+              <div className="product-labels">{productLabel && <span className="product-label">{productLabel}</span>}</div>
               <h2 className="product-title">{title}</h2>
               <p>{description}</p>
               <div className="price">
